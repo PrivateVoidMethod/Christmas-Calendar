@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 5px solid black;
+    margin: 15px auto;
+    background-image: url("./assets/Calendar.jpg");
+    background-size: cover;
+    box-shadow: 6px 6px 20px grey;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "door3 door19 door5 door11"
+        "door12 door22 door2 door16"
+        "door4 door8 door14 door21"
+        "door18 door1 door23 door15"
+        "door7 door13 door10 door24"
+        "door17 door9 door20 door6";
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    transition: opacity 2.5s;
+}
